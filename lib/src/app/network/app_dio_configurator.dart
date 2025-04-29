@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:archonit_test/src/app/network/urls.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
@@ -44,18 +43,7 @@ class AppDioConfigurator {
       return client;
     };
 
-    final interceptors = <Interceptor>[
-      InterceptorsWrapper(
-        onRequest: (options, handler) {
-          options.headers.addAll(
-            {
-              /// TODO(me): needed only for Coin API requests
-              'Authorization': 'Bearer ${Urls.apiKey}',
-            },
-          );
-        },
-      ),
-    ];
+    final interceptors = <Interceptor>[];
 
     dio.interceptors.addAll(interceptors);
 
