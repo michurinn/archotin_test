@@ -23,6 +23,7 @@ Design:
 https://www.figma.com/file/ac3bb7tiNhB2bI9vETQxmA/Untitled?type=design&node-id=0%3A1&mode=design&t=sSEKyR3QE9hgA36M-1
 
 [demo] demo/demo_a.webm
+[apk] app-release.apk
 
 DI: Inherited Widget
 State Managment: Bloc
